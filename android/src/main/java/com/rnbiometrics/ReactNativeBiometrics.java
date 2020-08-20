@@ -116,7 +116,7 @@ public class ReactNativeBiometrics extends ReactContextBaseJavaModule {
                 promise.reject("Cannot generate keys on android versions below 6.0", "Cannot generate keys on android versions below 6.0");
             }
         } catch (Exception e) {
-            promise.reject("Error generating public private keys: " + e.getMessage(), "Error generating public private keys");
+            promise.reject("Error generating public private keys: " + e.getMessage(), "Error generating public private keys" + e.getMessage());
         }
     }
 
